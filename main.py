@@ -2,7 +2,7 @@ def counter(filename, encoding, letter):
     with open(filename, 'r', encoding=encoding) as f:
         counter = 0
         line = f.readline()
-        counter_letter = counter_letter + line.count(letter)
+        counter_letter = line.count(letter)
         while line:
             counter = counter + 1
             line = f.readline()
